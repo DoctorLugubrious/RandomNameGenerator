@@ -27,7 +27,8 @@ void InputProcessor::main() {
 		cin >> userInput;
 
 		while (validInputs.find(userInput) == validInputs.end()) {
-			cout << endl << "Invalid input. New Input :";
+			printHelpMessage();
+			cout << "Invalid input. New Input :";
 			cin >> userInput;
 		}
 
@@ -42,9 +43,6 @@ void InputProcessor::main() {
 		}
 		else if (userInput == 'g') {
 			cout << generator.getName() << endl;
-		}
-		else {
-			printHelpMessage();
 		}
 
 		userInput = '\0';

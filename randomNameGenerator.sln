@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pkmn-namer", "pkmn-namer\pkmn-namer.vcxproj", "{3EB1BC25-7AD4-4605-B2DE-F71D9316465B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "randomNameGenerator", "randomNameGenerator\randomNameGenerator.vcxproj", "{3EB1BC25-7AD4-4605-B2DE-F71D9316465B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

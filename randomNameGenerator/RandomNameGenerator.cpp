@@ -11,13 +11,6 @@ string RandomNameGenerator::getName(int maxLength) {
 	while (name.length() + newSyllable.length() <= maxLength && newSyllable != "") {
 		name += newSyllable;
 		newSyllable = syllableGenerator.generateSyllable(maxLength - name.length());
-		if (newSyllable.length() == 0) {
-			cout << "0 syllable" << endl;
-		}
-	}
-
-	if (name.size() == 0) {
-		return "FAKE";
 	}
 
 	return name;

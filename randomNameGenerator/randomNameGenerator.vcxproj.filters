@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="InputProcessor.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NameFile.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NameGenerator.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NameTypePrinter.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NumGetter.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomNameGenerator.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SyllableGenerator.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomUtils.cpp">
+      <Filter>cppFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputProcessor.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNameGenerator.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NameFile.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NameGenerator.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NameType.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NameTypePrinter.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NumGetter.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomUtils.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SyllableGenerator.h">
+      <Filter>headerFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headerFiles">
+      <UniqueIdentifier>{e6dafa1f-5602-439d-800d-d62ea8f425d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cppFiles">
+      <UniqueIdentifier>{845d5a7a-3273-4fa7-9abf-10d45ad9060d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
