@@ -35,7 +35,8 @@ void InputProcessor::main() {
 		if (userInput == 'q') {
 			return;
 		}
-		else if (userInput == 't') {
+		
+		if (userInput == 't') {
 			generator.setType(NameTypePrinter::getUserInput());
 		}
 		else if (userInput == 'l') {

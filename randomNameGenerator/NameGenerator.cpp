@@ -1,10 +1,10 @@
 #include "NameGenerator.h"
 using namespace std;
-void NameGenerator::setType(NameType type) {
+void NameGenerator::setType(const NameType type) {
 	this->type = type;
 }
 
-void NameGenerator::setLength(int length) {
+void NameGenerator::setLength(const int length) {
 	this->length = length;
 }
 

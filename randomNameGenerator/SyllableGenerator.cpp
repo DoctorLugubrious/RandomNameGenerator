@@ -3,33 +3,33 @@
 
 using namespace std;
 
-string SyllableGenerator::generateSyllable(int maxLength) {
+string SyllableGenerator::generateSyllable(int length) {
 	const int MAX_SYLLABLE_SIZE = 8;
 	const int MIN_SYLLABLE_SIZE = 2;
 
-	if (maxLength > MAX_SYLLABLE_SIZE) {
+	if (length > MAX_SYLLABLE_SIZE) {
 		return generateStart() + generateVowel() + generateEnd();
 	}
-	else if (maxLength < MIN_SYLLABLE_SIZE) {
+
+	if (length < MIN_SYLLABLE_SIZE) {
 		return "";
 	}
-	else {
-		string vowel = generateVowel();
-		string start = generateStart();
-		int lengthSoFar = vowel.length() + start.length();
+	
+	string vowel = generateVowel();
+	string start = generateStart();
+	int lengthSoFar = vowel.length() + start.length();
 
-		if (lengthSoFar > maxLength) {
-			return vowel;
-		}
-
-		string end = generateEnd();
-		lengthSoFar += end.length();
-		if (lengthSoFar > maxLength) {
-			return start + vowel;
-		}
-		
-		return start + vowel + end;
+	if (lengthSoFar > length) {
+		return vowel;
 	}
+
+	string end = generateEnd();
+	lengthSoFar += end.length();
+	if (lengthSoFar > length) {
+		return start + vowel;
+	}
+		
+	return start + vowel + end;
 }
 
 SyllableGenerator::SyllableGenerator():
@@ -42,15 +42,18 @@ SyllableGenerator::SyllableGenerator():
 	ends({ "b","lb","rb","ch","rd","d","f","rf","lf","g","rg","lg","h","j",
 		"k","rk","lk","l","m","n","p","lp","rp","r","ls","ts","rts","t","rt","v","w","y","z" }) {}
 
-string SyllableGenerator::generateStart() {
+string SyllableGenerator::generateStart() const
+{
 	return generateFromList(starts, startBlankChance);
 }
 
-string SyllableGenerator::generateVowel() {
+string SyllableGenerator::generateVowel() const
+{
 	return RandomUtils::getRandomItem(vowels);
 }
 
-string SyllableGenerator::generateEnd() {
+string SyllableGenerator::generateEnd() const
+{
 	return generateFromList(ends, endBlankChance);
 }
 
