@@ -14,7 +14,7 @@ string NameFile::getRandom(int length) {
 	}
 
 
-	if (validSizes.size() == 0) {
+	if (validSizes.empty()) {
 		return "(TOO SHORT; NO NAMES FOUND)";
 	}
 

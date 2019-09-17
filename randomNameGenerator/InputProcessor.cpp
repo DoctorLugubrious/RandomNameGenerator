@@ -32,10 +32,8 @@ void InputProcessor::main() {
 			cin >> userInput;
 		}
 
-		if (userInput == 'q') {
-			return;
-		}
-		else if (userInput == 't') {
+		
+		if (userInput == 't') {
 			generator.setType(NameTypePrinter::getUserInput());
 		}
 		else if (userInput == 'l') {
@@ -43,6 +41,9 @@ void InputProcessor::main() {
 		}
 		else if (userInput == 'g') {
 			cout << generator.getName() << endl;
+		}
+		else if (userInput == 'q') {
+			return;
 		}
 
 		userInput = '\0';

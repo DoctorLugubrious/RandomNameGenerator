@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int NumGetter::getNum(std::string prompt) {
+int NumGetter::getNum(const string& prompt) {
 	int result = -1;
 
 	cout << prompt << endl;

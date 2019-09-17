@@ -2,6 +2,6 @@
 #include <string>
 class NumGetter {
 public:
-	static int getNum(std::string prompt);
+	static int getNum(const std::string& prompt);
 };
 

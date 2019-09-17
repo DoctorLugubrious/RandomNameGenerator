@@ -5,12 +5,13 @@
 
 class SyllableGenerator {
 public:
-	std::string generateSyllable(int length);
+	//generates a syllable of length up to max length. returns empty string if no syllable can be generated.
+	std::string generateSyllable(int maxLength) const;
 	SyllableGenerator();
 private:
-	std::string generateStart();
-	std::string generateVowel();
-	std::string generateEnd();
+	std::string generateStart() const;
+	std::string generateVowel() const;
+	std::string generateEnd() const;
 	static std::string generateFromList(std::vector<std::string> list, float chanceForBlank);
 
 	static constexpr float startBlankChance = 0.3f;
